@@ -1,0 +1,46 @@
+{
+  "name": "boilerplate-react-redux",
+  "version": "0.2.0",
+  "description": "React Redux using express",
+  "main": "server/index.js",
+  "scripts": {
+    "client": "webpack",
+    "server": "node server",
+    "dev:client": "webpack --watch",
+    "dev:server": "nodemon server",
+    "start": "run-s client server",
+    "dev": "run-p dev:client dev:server"
+  },
+  "author": "EDA",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
